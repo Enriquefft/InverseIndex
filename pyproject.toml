@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "inverseindex"
+version = "0.1.0"
+description = ""
+authors = ["Enrique <enrique.flores@utec.edu.pe>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+nltk = "^3.8.1"
+sympy = "^1.12"
+
+
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.23.0"
+
+[tool.poe.tasks]
+test = "python inverseindex/main.py"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
